@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        style="@style/IconButton"
+        android:layout_marginStart="@dimen/commonui_edge_padding"
+        android:layout_marginTop="@dimen/commonui_edge_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_left"/>
+
+    <TextView
+        android:id="@+id/intervention_details_title"
+        style="@style/TextH0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commonui_edge_padding"
+        android:gravity="center"
+        android:text="@string/intervention_details_title"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/intervention_details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/commonui_edge_padding"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intervention_details_title"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-66dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/map_interventionDescription_horizontalPadding"
+            android:paddingStart="@dimen/map_interventionDescription_horizontalPadding">
+
+            <View
+                style="@style/VerticalDivider"
+                android:layout_height="0dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_importance_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_settlement_content"
+                app:layout_constraintStart_toEndOf="@+id/intervention_settlement_title"
+                app:layout_constraintTop_toTopOf="@+id/intervention_id_content"
+                />
+
+            <View
+                style="@style/VerticalDivider"
+                android:layout_height="0dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_importance_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_id_content"
+                />
+
+            <View
+                style="@style/VerticalDivider"
+                android:layout_height="0dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_importance_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_id_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_id_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_id"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_id_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_id_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_id_content"/>
+
+            <TextView
+                android:id="@+id/intervention_id_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintBottom_toTopOf="@+id/intervention_settlement_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_id_title"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/intervention_id_content"/>
+
+            <TextView
+                android:id="@+id/intervention_settlement_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_settlement"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_settlement_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_settlement_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_settlement_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_settlement_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_settlement_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_id_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_settlement_content"/>
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_id_content"/>
+
+            <TextView
+                android:id="@+id/intervention_neighbourhood_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_neighbourhood"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_neighbourhood_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_neighbourhood_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_neighbourhood_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_neighbourhood_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_neighbourhood_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_settlement_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_neighbourhood_content"/>
+
+            <TextView
+                android:id="@+id/intervention_districtOffice_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_districtOffice"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_districtOffice_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_districtOffice_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_districtOffice_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_districtOffice_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_districtOffice_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_neighbourhood_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_districtOffice_content"/>
+
+            <TextView
+                android:id="@+id/intervention_street_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_street"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_street_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_street_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_street_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_street_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_street_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_districtOffice_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_street_content"/>
+
+            <TextView
+                android:id="@+id/intervention_streetWithDetails_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_streetWithDetails"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_streetWithDetails_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_streetWithDetails_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_streetWithDetails_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_streetWithDetails_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_streetWithDetails_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_street_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_streetWithDetails_content"/>
+
+            <TextView
+                android:id="@+id/intervention_houseNumber_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_houseNumber"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_houseNumber_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_houseNumber_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_houseNumber_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_houseNumber_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_houseNumber_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_streetWithDetails_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_houseNumber_content"/>
+
+            <TextView
+                android:id="@+id/intervention_hydrantInfo_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_hydrantInfo"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_hydrantInfo_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_hydrantInfo_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_hydrantInfo_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_hydrantInfo_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_hydrantInfo_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_houseNumber_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_hydrantInfo_content"/>
+
+            <TextView
+                android:id="@+id/intervention_interventionType_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_interventionType"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_interventionType_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_interventionType_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_interventionType_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_interventionType_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_hydrantInfo_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_hydrantInfo_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_interventionType_content"/>
+
+            <TextView
+                android:id="@+id/intervention_event_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_event"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_event_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_event_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_event_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_event_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_event_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_interventionType_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_event_content"/>
+
+            <TextView
+                android:id="@+id/intervention_eventType_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_eventType"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_eventType_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_eventType_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_eventType_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_eventType_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_eventType_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_event_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_eventType_content"/>
+
+            <TextView
+                android:id="@+id/intervention_description_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_description"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_description_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_description_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_description_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_description_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_description_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_eventType_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_description_content"/>
+
+            <TextView
+                android:id="@+id/intervention_importance_title"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/commonui_edge_padding"
+                android:text="@string/intervention_importance"
+                app:layout_constraintBottom_toBottomOf="@+id/intervention_importance_content"
+                app:layout_constraintEnd_toStartOf="@+id/intervention_importance_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/intervention_importance_content"
+                />
+
+            <TextView
+                android:id="@+id/intervention_importance_content"
+                style="@style/TextH2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/commonui_edge_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/intervention_importance_title"
+                app:layout_constraintTop_toBottomOf="@+id/intervention_description_content"
+                />
+
+            <View
+                style="@style/HorizontalDivider"
+                android:layout_marginBottom="@dimen/commonui_edge_padding"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intervention_importance_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

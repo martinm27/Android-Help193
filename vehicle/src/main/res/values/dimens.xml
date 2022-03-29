@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Text -->
+    <dimen name="text_display">24sp</dimen>
+    <dimen name="text_h0">36sp</dimen>
+    <dimen name="text_h1">20sp</dimen>
+    <dimen name="text_h2">17sp</dimen>
+    <dimen name="text_h3">14sp</dimen>
+    <dimen name="text_h4">11sp</dimen>
+    <dimen name="text_section_header">11sp</dimen>
+    <dimen name="text_b0">17sp</dimen>
+    <dimen name="text_b1">14sp</dimen>
+    <dimen name="text_b2">12sp</dimen>
+    <dimen name="text_subtitle">12sp</dimen>
+
+    <dimen name="bg_radius">8dp</dimen>
+    <dimen name="basic_horizontal_guideline">16dp</dimen>
+    <dimen name="divider_size">1dp</dimen>
+
+    <!-- Common -->
+    <dimen name="common_gutter_size">11dp</dimen>
+    <dimen name="common_edge_margin">11dp</dimen>
+    <dimen name="commonui_edge_padding">22dp</dimen>
+
+    <dimen name="common_content_width">0dp</dimen>
+    <dimen name="common_popup_content_width">@dimen/common_content_width</dimen>
+    <dimen name="common_column_width">165dp</dimen>
+    <dimen name="common_inner_margin">11dp</dimen>
+    <dimen name="common_toolbar_height">64dp</dimen>
+    <dimen name="common_toolbar_title_horizontal_margin">22dp</dimen>
+    <dimen name="common_drawable_padding">8dp</dimen>
+
+    <dimen name="common_section_element_padding">22dp</dimen>
+    <dimen name="common_vertical_item_padding">44dp</dimen>
+
+    <!-- Clickable Icon -->
+    <dimen name="min_clickable_icon_size">48dp</dimen>
+    <dimen name="min_clickable_icon_padding">@dimen/common_inner_margin</dimen>
+
+    <!-- Buttons -->
+    <dimen name="flat_button_height">55dp</dimen>
+
+    <!-- Clickable Shadow -->
+    <dimen name="clickable_shadow_elevation">4dp</dimen>
+    <dimen name="clickable_shadow_elevation_pressed">6dp</dimen>
+
+    <!-- Scene Tile -->
+    <dimen name="scene_tile_width">171dp</dimen>
+    <dimen name="scene_tile_height">84dp</dimen>
+    <dimen name="scene_tile_icon_size">24dp</dimen>
+    <dimen name="scene_tile_icon_margin_start">22dp</dimen>
+    <dimen name="scene_tile_text_padding_end">22dp</dimen>
+    <dimen name="scene_tile_text_padding_start">8dp</dimen>
+
+    <!-- Seek Bar -->
+    <dimen name="view_seek_bar_radius">67dp</dimen>
+    <dimen name="view_seek_bar_thumb_size">33dp</dimen> <!-- Tied to view_seek_bar_thumb_half_size-->
+    <dimen name="view_seek_bar_thumb_half_size">16.5dp</dimen> <!-- Tied to view_seek_bar_thumb_size-->
+    <dimen name="view_seek_bar_thumb_elevation">2dp</dimen>
+    <dimen name="view_seek_bar_thumb_center_indicator_padding">11dp</dimen>
+    <dimen name="view_seek_bar_thumb_shadow_spread">6dp</dimen>
+    <dimen name="view_seek_bar_thumb_shadow_thickness">15dp</dimen>
+    <dimen name="view_seek_bar_thumb_shadow_gradient_radius">20dp</dimen>
+
+    <!-- Bottom navigation -->
+    <dimen name="item_bottom_navigation_icon_size">24dp</dimen>
+    <dimen name="item_bottom_navigation_icon_margin_top">8dp</dimen>
+    <dimen name="item_bottom_navigation_height">48dp</dimen>
+    <dimen name="item_bottom_navigation_elevation">8dp</dimen>
+    <dimen name="item_bottom_navigation_icon_margin_end">8dp</dimen>
+
+    <dimen name="item_bottom_navigation_two_item_padding">32dp</dimen>
+    <dimen name="item_bottom_navigation_three_item_padding">16dp</dimen>
+
+    <!-- Simple system tile -->
+    <dimen name="simple_system_tile_height">141dp</dimen>
+    <dimen name="simple_system_tile_margin">8dp</dimen>
+    <dimen name="simple_system_tile_corner_radius">8dp</dimen>
+    <dimen name="simple_system_tile_elevation">6dp</dimen>
+    <dimen name="simple_system_tile_icon_size">24dp</dimen>
+    <dimen name="simple_system_tile_icon_margin">22dp</dimen>
+    <dimen name="simple_system_tile_dots_size">24dp</dimen>
+    <dimen name="simple_system_tile_dots_margin">22dp</dimen>
+    <dimen name="simple_system_tile_title_subtitle_margin">22dp</dimen>
+    <dimen name="simple_system_tile_alert_icon_margin">11dp</dimen>
+
+    <!-- Rounded button -->
+    <dimen name="rounded_button_corner_radius">4dp</dimen>
+    <dimen name="rounded_button_stroke_width">1dp</dimen>
+    <dimen name="rounded_button_left_offset">-1dp</dimen>
+
+    <!-- Elevation Toolbar -->
+    <dimen name="elevation_toolbar_elevation">4dp</dimen>
+
+    <!-- Favorite button -->
+    <dimen name="favorite_toggle_button_inset">12dp</dimen>
+
+    <!-- Pulley -->
+    <dimen name="pulley_corner_radius">16dp</dimen>
+    <dimen name="pulley_elevation">16dp</dimen>
+    <dimen name="pulley_container_padding_top">13dp</dimen>
+    <dimen name="pulley_handle_width">49dp</dimen>
+    <dimen name="pulley_handle_height">5dp</dimen>
+    <dimen name="pulley_handle_margin_top">8dp</dimen>
+    <dimen name="pulley_handle_corner_radius">3dp</dimen>
+    <item name="pulley_background_max_alpha" type="dimen" format="float">0.8</item>
+
+    <!-- Seekbar -->
+    <dimen name="seekbar_height">2dp</dimen>
+    <dimen name="seekbar_max_height">@dimen/seekbar_height</dimen>
+    <dimen name="seekbar_min_height">@dimen/seekbar_height</dimen>
+    <dimen name="seekbar_horizontal_padding">5dp</dimen>
+    <dimen name="seekbar_thumb_size">10dp</dimen>
+    <dimen name="seekbar_vertical_padding">8dp</dimen>
+
+    <!-- Rounded button -->
+    <dimen name="rounded_button_vertical_padding">18dp</dimen>
+
+    <!-- Circle border -->
+    <dimen name="circle_border_width">1dp</dimen>
+
+    <dimen name="commonUi_radioButton_borderWidth">1dp</dimen>
+    <dimen name="commonUi_radioButton_selectedPadding">5dp</dimen>
+
+    <dimen name="commonui_cursorWidth">2dp</dimen>
+    <dimen name="commonui_animatedEditText_horizontalMargin">-4dp</dimen>
+
+    <dimen name="commonui_recyclerView_negativeMarginBottom">-11dp</dimen>
+
+    <!-- Disabled feature -->
+    <dimen name="disabled_feature_cancel_button_padding">16dp</dimen>
+    <dimen name="disabled_feature_element_top_margin">36dp</dimen>
+    <dimen name="disabled_feature_text_horizontal_margin">32dp</dimen>
+    <dimen name="disabled_feature_card_horizontal_margin">22dp</dimen>
+    <dimen name="disabled_feature_separator_size">1dp</dimen>
+    <dimen name="disabled_feature_card_corner_radius">8dp</dimen>
+    <dimen name="disabled_feature_card_elevation">22dp</dimen>
+    <dimen name="disabled_feature_card_width">335dp</dimen>
+    <dimen name="disabled_feature_card_height">146dp</dimen>
+    <dimen name="try_again_margin_top">32dp</dimen>
+    <dimen name="try_again_padding">16dp</dimen>
+    <dimen name="try_again_elevation">4dp</dimen>
+
+    <!-- Connectivity bar -->
+    <dimen name="connectivitybar_titleText_drawablePadding">2dp</dimen>
+    <dimen name="connectivitybar_titleText_padding">4dp</dimen>
+    <dimen name="connectivitybar_height">24dp</dimen>
+    <dimen name="onboarding_backgroundImageHeight">450dp</dimen>
+    <dimen name="onboarding_logo_size">250dp</dimen>
+    <dimen name="logo_margin_top">32dp</dimen>
+    <dimen name="onboarding_gif_image_height">200dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+    <dimen name="onboarding_pin_message_textSize">50sp</dimen>
+    <dimen name="confirm_button_width">200dp</dimen>
+    <dimen name="confirm_button_height">100dp</dimen>
+    <dimen name="interventions_panel_height">500dp</dimen>
+    <dimen name="interventions_padding">50dp</dimen>
+
+    <dimen name="stationName_paddingTop">47dp</dimen>
+
+    <dimen name="main_activity_container_elevation">8dp</dimen>
+    <dimen name="main_activity_messageservice_elevation">10dp</dimen>
+
+    <dimen name="popupmessage_description_verticalMargin">36dp</dimen>
+    <dimen name="popupmessage_container_elevation">22dp</dimen>
+    <dimen name="popupmessage_container_maxWidth">335dp</dimen>
+    <dimen name="popupmessage_button_verticalPadding">16dp</dimen>
+    <dimen name="intervention_layout_width">200dp</dimen>
+    <dimen name="intervention_layout_height">100dp</dimen>
+    <dimen name="choose_intervention_marginEnd">32dp</dimen>
+    <dimen name="map_interventionDescription_horizontalPadding">100dp</dimen>
+    <dimen name="map_interventionDescription_textSize">20sp</dimen>
+    <dimen name="map_interventionDescription_lineSpacing">6dp</dimen>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    tools:background="@color/green"
+    tools:layout_height="wrap_content">
+
+    <TextSwitcher
+        android:id="@+id/connectivityBar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/connectivitybar_height"
+        android:layout_gravity="center"
+        android:inAnimation="@anim/top_enter_with_fade"
+        android:outAnimation="@anim/bottom_exit_with_fade"
+        android:padding="@dimen/connectivitybar_titleText_padding"
+        tools:background="@color/green">
+
+        <TextView
+            style="@style/TextH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/connectivitybar_titleText_drawablePadding"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            tools:drawableStart="@drawable/ic_check_white"
+            tools:text="Connected"/>
+
+        <TextView
+            style="@style/TextH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/connectivitybar_titleText_drawablePadding"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/white"/>
+
+    </TextSwitcher>
+</FrameLayout>

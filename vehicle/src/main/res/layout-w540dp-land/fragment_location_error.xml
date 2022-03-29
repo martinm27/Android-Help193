@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:background="@color/base_gray"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextH1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:textAlignment="center"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/permissionErrorTryAgain"
+        style="@style/TextH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/try_again_margin_top"
+        android:background="@drawable/bg_white_rounded"
+        android:elevation="@dimen/try_again_elevation"
+        android:padding="@dimen/try_again_padding"
+        android:text="@string/try_again"/>
+
+</LinearLayout>

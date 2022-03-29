@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //noinspection DifferentStdlibGradleVersion
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+
+    // Joda-Time for java 7 Android compatible time classes
+    implementation 'joda-time:joda-time:2.10.1'
+
+    // JavaFX Validation
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+
+    // JPA
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    
+    // Swagger - API documentation
+    implementation 'io.swagger:swagger-annotations:1.5.20' // Annotations for model classes.
+
+    // org.locationtech.jts.geom Geometry objects
+    implementation 'org.locationtech.jts:jts-core:1.16.1'
+    
+    // Jackson - JSON serialization/deserialization
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.8' // Annotations
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8' // Annotations
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8' // Jackson and Kotlin
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.8' // Joda-Time <-> ISO string
+    implementation 'org.locationtech.spatial4j:spatial4j:0.7' // org.locationtech.jts.geom <-> GeoJSON
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}

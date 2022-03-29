@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_gray"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextH0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logo_margin_top"
+        android:gravity="center"
+        android:text="@string/choose_vehicle"/>
+
+    <View
+        style="@style/HorizontalDivider"
+        android:layout_marginTop="@dimen/commonui_edge_padding"
+        android:background="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vehicles_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/interventions_panel_height"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/interventions_padding"
+        android:paddingEnd="@dimen/interventions_padding"
+        android:paddingBottom="@dimen/interventions_padding"
+        android:scrollbars="vertical"
+        tools:itemCount="7"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_vehicle"
+        tools:spanCount="5"/>
+
+    <View
+        style="@style/HorizontalDivider"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/try_again_margin_top"
+        android:background="@color/base_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vehicles_back"
+            style="@style/TextH1"
+            android:layout_width="@dimen/confirm_button_width"
+            android:layout_height="@dimen/confirm_button_height"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white_rounded"
+            android:gravity="center"
+            android:padding="@dimen/try_again_padding"
+            android:text="@string/back"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/vehicles_confirm"
+            style="@style/TextH1"
+            android:layout_width="@dimen/confirm_button_width"
+            android:layout_height="@dimen/confirm_button_height"
+            android:layout_gravity="center"
+            android:background="@drawable/kiosk_item_gradient"
+            android:gravity="center"
+            android:padding="@dimen/try_again_padding"
+            android:text="@string/confirm"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

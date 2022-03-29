@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popupmessage_backgroundColor"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:focusable="true">
+
+    <hr.fer.help193.vehicle.app.view.BoundedLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/common_section_element_padding"
+        android:layout_marginStart="@dimen/common_section_element_padding"
+        app:maxWidth="@dimen/popupmessage_container_maxWidth">
+
+        <hr.fer.help193.vehicle.app.view.ClippedConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_no_ripple"
+            android:elevation="@dimen/popupmessage_container_elevation">
+
+            <TextView
+                android:id="@+id/popupmessage_title"
+                style="@style/TextH3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_edge_margin"
+                android:layout_marginStart="@dimen/common_edge_margin"
+                android:layout_marginTop="@dimen/popupmessage_description_verticalMargin"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Description"/>
+
+            <View
+                android:id="@+id/popupmessage_horizontalDivider"
+                style="@style/HorizontalDivider"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/popupmessage_description_verticalMargin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popupmessage_title"/>
+
+            <TextView
+                android:id="@+id/popupmessage_leftButton"
+                style="@style/TextB1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/popupmessage_button_verticalPadding"
+                android:paddingTop="@dimen/popupmessage_button_verticalPadding"
+                app:layout_constraintEnd_toStartOf="@id/popupmessage_verticalDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popupmessage_horizontalDivider"
+                tools:text="OK"/>
+
+            <View
+                android:id="@+id/popupmessage_verticalDivider"
+                style="@style/VerticalDivider"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/popupmessage_leftButton"
+                app:layout_constraintEnd_toStartOf="@id/popupmessage_rightButton"
+                app:layout_constraintStart_toEndOf="@id/popupmessage_leftButton"
+                app:layout_constraintTop_toTopOf="@id/popupmessage_leftButton"/>
+
+            <TextView
+                android:id="@+id/popupmessage_rightButton"
+                style="@style/TextB1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/popupmessage_button_verticalPadding"
+                android:paddingTop="@dimen/popupmessage_button_verticalPadding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/popupmessage_verticalDivider"
+                app:layout_constraintTop_toBottomOf="@id/popupmessage_horizontalDivider"
+                tools:text="Cancel"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/popupmessage_rightButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:constraint_referenced_ids="popupmessage_verticalDivider,popupmessage_rightButton"/>
+
+        </hr.fer.help193.vehicle.app.view.ClippedConstraintLayout>
+
+    </hr.fer.help193.vehicle.app.view.BoundedLinearLayout>
+
+</FrameLayout>

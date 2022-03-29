@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_animation_duration">350</integer>
+    <integer name="grid_column_count">3</integer>
+    <integer name="grid_row_count">4</integer>
+    <integer name="interventions_grid_count">1</integer>
+    <integer name="vehicles_grid_count">10</integer>
+    <integer name="vehicles_grid_span_size">1</integer>
+    <integer name="station_grid_span_size">10</integer>
+
+    <integer name="intervention_grid_row_count">8</integer>
+    <integer name="intervention_grid_column_count">1</integer>
+</resources>

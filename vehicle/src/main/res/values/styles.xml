@@ -1,0 +1,187 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base content container styles -->
+    <style name="ContentContainer">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/common_edge_margin</item>
+        <item name="android:layout_marginEnd">@dimen/common_edge_margin</item>
+    </style>
+
+    <style name="PopupContentContainer" parent="ContentContainer"/>
+
+    <!-- Base Text Styles -->
+    <style name="BaseText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextDisplay" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_display</item>
+    </style>
+
+    <style name="TextH0" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_h0</item>
+    </style>
+
+    <style name="TextH1" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_h1</item>
+    </style>
+
+    <style name="TextH2" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_h2</item>
+    </style>
+
+    <style name="TextH3" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_h3</item>
+    </style>
+
+    <style name="TextH4" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_h4</item>
+    </style>
+
+    <style name="TextSectionHeader" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_section_header</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextB0" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_b0</item>
+    </style>
+
+    <style name="TextB1" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_b1</item>
+    </style>
+
+    <style name="TextB2" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_b2</item>
+        <!--TODO: <item name="android:lineHeight">28sp</item>-->
+    </style>
+
+    <style name="TextSubtitle" parent="BaseText">
+        <item name="android:fontFamily">@font/cerebri_sans_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <!--TODO: <item name="android:lineHeight">28sp</item>-->
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <!-- Other -->
+    <style name="SwitchStyle">
+        <!-- Active thumb color & Active track color(30% transparency) -->
+        <item name="colorControlActivated">@color/black</item>
+        <!-- Inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/light_gray</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">@dimen/min_clickable_icon_size</item>
+        <item name="android:layout_height">@dimen/min_clickable_icon_size</item>
+        <item name="android:padding">@dimen/min_clickable_icon_padding</item>
+    </style>
+
+    <style name="IconButton" parent="Icon">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="TextSubtitleDarkGray" parent="TextSubtitle">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextSubtitleRed" parent="TextSubtitle">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="TextH3Disabled" parent="TextH3">
+        <item name="android:textColor">@color/h3_disabled</item>
+    </style>
+
+    <style name="StyledSectionHeader" parent="TextSectionHeader">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_marginStart">@dimen/common_section_element_padding</item>
+        <item name="android:layout_marginEnd">@dimen/common_section_element_padding</item>
+    </style>
+
+    <style name="StyledSectionElement" parent="TextB0">
+        <item name="android:paddingStart">@dimen/common_section_element_padding</item>
+        <item name="android:paddingEnd">@dimen/common_section_element_padding</item>
+        <item name="android:paddingTop">@dimen/common_section_element_padding</item>
+        <item name="android:paddingBottom">@dimen/common_section_element_padding</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="BaseDivider">
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="HorizontalDivider" parent="BaseDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_size</item>
+    </style>
+
+    <style name="VerticalDivider" parent="BaseDivider">
+        <item name="android:layout_width">@dimen/divider_size</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ClickableWhiteBackground">
+        <item name="android:background">@color/white</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <declare-styleable name="BoundedLinearLayout">
+        <attr name="maxHeight" format="dimension"/>
+        <attr name="maxWidth" format="dimension"/>
+    </declare-styleable>
+
+    <style name="BlackFlatButton" parent="TextH3">
+        <item name="android:layout_height">@dimen/flat_button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/kiosk_item_gradient</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator">@animator/clickable_shadow</item>
+    </style>
+
+    <style name="RedFlatButton" parent="TextH3">
+        <item name="android:layout_height">@dimen/flat_button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/kiosk_exit_item_gradient</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator">@animator/clickable_shadow</item>
+    </style>
+
+    <style name="VehicleText" parent="TextH3"/>
+</resources>

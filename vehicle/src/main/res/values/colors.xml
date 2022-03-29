@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Base Colors-->
+    <color name="white">#FFFFFF</color>
+    <color name="white_pressed">#D6D7DF</color>
+    <color name="white_disabled">#F6F6F6</color>
+
+    <color name="background">#F4F4F9</color>
+
+    <color name="base_gray">#F3F3FA</color>
+    <color name="base_gray_b">#F2F2F7</color>
+    <color name="light_gray">#EFEFF8</color>
+    <color name="dark_gray">#8C8FA9</color>
+    <color name="dark_gray_25">#408C8FA9</color>
+
+    <color name="black">#171A32</color>
+    <color name="black_pressed">@color/dark_gray</color>
+    <color name="black_disabled">#C3C4CC</color>
+
+    <color name="h3_disabled">#babbc2</color>
+
+    <color name="blue">#5999D5</color>
+    <color name="light_blue">#3FCBF7</color>
+    <color name="climate_indicator_blue">#7393CD</color>
+    <color name="climate_indicator_red">#E17081</color>
+    <color name="red">#ED5959</color>
+    <color name="dark_red">#A01F1F</color>
+    <color name="green">#62CBB4</color>
+    <color name="dark_green">#078585</color>
+    <color name="orange">#FFD600</color>
+    <color name="lighter_orange">#F5E6B3</color>
+    <color name="orange_opacity_30">#4DFFD600</color>
+    <color name="purple">#9B7DB9</color>
+    <color name="pink">#BE69A1</color>
+
+    <color name="shadow_start">#C7C7CD</color>
+    <color name="divider">#D4D7E8</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="commonui_sliderDisabled">#E2E2E8</color>
+    <color name="commonui_sliderDisabledDark">#CECED6</color>
+
+    <color name="disabled_feature_background_color">#E6F4F4F9</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="popupmessage_backgroundColor">#E6F4F4F9</color>
+
+    <color name="primary_orange_color">#eb8a19</color>
+
+</resources>

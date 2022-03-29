@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    android:id="@+id/item_intervention"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_rounded"
+    android:elevation="@dimen/try_again_elevation"
+    android:orientation="horizontal"
+    app:columnCount="15"
+    app:rowCount="@integer/intervention_grid_row_count">
+
+    <TextView
+        android:id="@+id/item_interventionDate"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:padding="@dimen/try_again_padding"
+        tools:text="29.03."/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionTime"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:padding="@dimen/try_again_padding"
+        tools:text="20:56"/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionEventType"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="3"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:padding="@dimen/try_again_padding"
+        tools:text="Tehnička intervencija"/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionAreaOffice"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:padding="@dimen/try_again_padding"
+        tools:text="NOVI ZAGREB"/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionNeighbourhood"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:padding="@dimen/try_again_padding"
+        tools:text="PODBREŽJE"/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionAddress"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="3"
+        android:layout_rowWeight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="4"
+        android:paddingEnd="@dimen/common_inner_margin"
+        android:paddingStart="@dimen/common_inner_margin"
+        tools:text="CIMERMANA(ZIMMERMANA), 10"/>
+
+    <View
+        style="@style/VerticalDivider"
+        android:layout_height="@dimen/intervention_layout_height"/>
+
+    <TextView
+        android:id="@+id/item_interventionDescription"
+        style="@style/TextH3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="3"
+        android:layout_rowWeight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="4"
+        android:paddingEnd="@dimen/common_inner_margin"
+        android:paddingStart="@dimen/common_inner_margin"
+        tools:text="Po dojavi jedno stablo palo na zemlju preko parkirališta, drugo se nagnulo i visi preko pješačkog prijelaza. Potrebna visina."/>
+
+</GridLayout>
